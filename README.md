@@ -16,6 +16,8 @@ Package not supported in IOS
 
 #### Android
 
+clone this example folder https://github.com/BalaRajendran/React-native-file-share-for-android and run in your local system
+
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
 
 - Add `import com.ReactNativeFileShareForAndroid.ReactNativeFileShareForAndroidPackage;` to the imports at the top of the file
@@ -31,9 +33,15 @@ Package not supported in IOS
      compile project(':react-native-file-share-for-android')
    ```
 
+## Issues
+
+If you are facing any issues, create Issues in Repository
+
 ## preview
 
-[![Watch the video](public/preview.jpeg)](public/preview.mp4)
+click to play preview
+
+[![Watch the video](public/preview.jpeg)](https://youtu.be/fjPl_MtaaYo)
 
 ## Usage
 
