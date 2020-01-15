@@ -1,0 +1,31 @@
+{
+  "name": "react-native-file-share-for-android",
+  "version": "1.0.1",
+  "description": "This Package helps you to share file from other apps to developing apps",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "react",
+    "share",
+    "file",
+    "share-file",
+    "send-file"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BalaRajendran/React-native-file-share-for-android.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BalaRajendran/React-native-file-share-for-android/issues"
+  },
+  "homepage": "https://github.com/BalaRajendran/React-native-file-share-for-android#readme",
+  "author": "Balaji Rajendran",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
+}
