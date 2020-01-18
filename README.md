@@ -1,5 +1,15 @@
 # react-native-file-share-for-android
 
+## Example
+
+Clone this example folder https://github.com/BalaRajendran/React-native-file-share-for-android and run in your local system
+
+```sh
+git clone https://github.com/BalaRajendran/React-native-file-share-for-android
+npm install
+react-native run-android
+```
+
 ## Getting started
 
 `$ npm install react-native-file-share-for-android --save`
@@ -16,8 +26,6 @@ Package not supported in IOS
 
 #### Android
 
-clone this example folder https://github.com/BalaRajendran/React-native-file-share-for-android and run in your local system
-
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
 
 - Add `import com.ReactNativeFileShareForAndroid.ReactNativeFileShareForAndroidPackage;` to the imports at the top of the file
@@ -30,7 +38,7 @@ clone this example folder https://github.com/BalaRajendran/React-native-file-sha
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
-     compile project(':react-native-file-share-for-android')
+    implementation project(':react-native-file-share-for-android')
    ```
 
 ## Issues
