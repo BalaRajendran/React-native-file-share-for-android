@@ -1,5 +1,7 @@
 # react-native-file-share-for-android
 
+`react-native-file-share-for-android` which helps to share files, videos, photos etc into react-native apps. you can use this package via installing the npm package
+
 ## Example
 
 Clone this example folder https://github.com/BalaRajendran/React-native-file-share-for-android and run in your local system
