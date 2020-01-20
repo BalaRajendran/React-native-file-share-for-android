@@ -32,14 +32,40 @@ Package not supported in IOS
 - Add `new ReactNativeFileShareForAndroidPackage()` to the list returned by the `getPackages()` method
 
 2. Append the following lines to `android/settings.gradle`:
+
    ```
    include ':react-native-file-share-for-android'
    project(':react-native-file-share-for-android').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-file-share-for-android/android')
    ```
-3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+
+3. In `android/app/src/main/AndroidManifest.xml` in <activity> : Add What ever Want to share MIME Type so only include you want to share your App
    ```
+   <activity
+   ...
+   >
+   ...
+      <intent-filter>
+      <action android:name="android.intent.action.SEND" />
+      <category android:name="android.intent.category.DEFAULT" />
+      <data android:mimeType="*/*" /> //It can accept everything
+      </intent-filter>
+   </activity>
+   ```
+   - Some of the Specific Types are:
+   ```
+   <data android:mimeType="text/plain" />
+   <data android:mimeType="image/*" />
+   <data android:mimeType="application/*" />
+   <data android:mimeType="video/*" />
+   ```
+
+```
+4. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
+```
+
     implementation project(':react-native-file-share-for-android')
-   ```
+
+````
 
 ## Issues
 
@@ -59,30 +85,30 @@ import { View, Text } from "react-native";
 import ReactNativeFileShareForAndroid from "react-native-file-share-for-android";
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      url: ""
-    };
-  }
+constructor(props) {
+ super(props);
+ this.state = {
+   url: ""
+ };
+}
 
-  componentDidMount() {
-    if (ReactNativeFileShareForAndroid) {
-      ReactNativeFileShareForAndroid.getFilepath(url => {
-        this.setState({ url });
-      });
-    }
-  }
+componentDidMount() {
+ if (ReactNativeFileShareForAndroid) {
+   ReactNativeFileShareForAndroid.getFilepath(url => {
+     this.setState({ url });
+   });
+ }
+}
 
-  render() {
-    return (
-      <View>
-        <Text>File Url : </Text>
-        <Text>{this.state.url}</Text>
-      </View>
-    );
-  }
+render() {
+ return (
+   <View>
+     <Text>File Url : </Text>
+     <Text>{this.state.url}</Text>
+   </View>
+ );
+}
 }
 
 RNReactNativeFileShareForAndroid;
-```
+````
