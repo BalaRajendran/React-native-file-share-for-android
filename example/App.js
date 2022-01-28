@@ -13,10 +13,15 @@ export default class App extends Component {
   }
 
   componentDidMount() {
+    console.log('Hello Iinsdie App', ReactNativeFileShareForAndroid);
     if (ReactNativeFileShareForAndroid) {
+      console.log('Isnide if');
       ReactNativeFileShareForAndroid.getFilepath(url => {
+        console.log('Isnide if if', url);
         this.setState({url});
       });
+    } else {
+      console.log('Else ReactNativeFileShareForAndroid');
     }
   }
 

@@ -1,6 +1,6 @@
 {
   "name": "react-native-file-share-for-android",
-  "version": "1.0.4",
+  "version": "1.0.45",
   "description": "This Package helps you to share file from other apps to developing apps",
   "main": "",
   "scripts": {
@@ -26,6 +26,6 @@
   "author": "Balaji Rajendran",
   "license": "MIT",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "0.67.1"
   }
 }
